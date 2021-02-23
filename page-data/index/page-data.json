@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-pages-index-js","path":"/","result":{"data":{"posts":{"edges":[{"node":{"frontmatter":{"title":"Hello, World.","date":"2021-02-02"},"html":"<p>This is a <strong>post</strong>.</p>"}},{"node":{"frontmatter":{"title":"Hello, Ned.","date":"2021-02-03"},"html":"<p>This is a ned post.</p>"}}]}},"pageContext":{}},"staticQueryHashes":[]}
