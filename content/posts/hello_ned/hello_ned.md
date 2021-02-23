@@ -1,5 +1,5 @@
 ---
-date: '2/23/2021'
+date: '2021-02-03'
 title: 'Hello, Ned.'
 ---
 This is a ned post.
