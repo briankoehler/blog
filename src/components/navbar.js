@@ -1,20 +1,49 @@
 import React from 'react'
+import styled from 'styled-components'
 
 
-const Navbar = (props) => {
+const NavbarContainer = styled.div`
+    margin-top: 5vh !important;
+    margin-bottom: 10vh !important;
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        text-decoration: none;
+        color: lightgray;
+        font-size: 1.5rem;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    #nav-start a {
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+
+    #nav-end a + a {
+        margin-left: 24px; /* This is 20px on my portfolio, but that didn't match... */
+    }
+`
+
+
+const Navbar = () => {
 	return (
 		<div>
-			<div id='nav-start'>
-				<a href='/'>Brian Koehler</a>
-			</div>
+            <NavbarContainer>
+                <div id='nav-start'>
+                    <a href='/'>Brian Koehler</a>
+                </div>
 
-			<div id='nav-end'>
-				<a href='/#about'>About</a>
-				<a href='/#projects'>Projects</a>
-				<span id='burger'>
-					<i class='fas fa-bars fa-2x' onclick='toggleMenu()'></i>
-				</span>
-			</div>
+                <div id='nav-end'>
+                    <a href='/#about'>About</a>
+                    <a href='/#projects'>Projects</a>
+                </div>
+            </NavbarContainer>
 		</div>
 	)
 }
